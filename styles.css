@@ -128,8 +128,9 @@ nav a:hover{
 
 #services{
   background:url("./assets/Layer25.png");
-  background-size:100%;
+  background-size:100% 100%;
   min-height:100vh;
+  background-repeat: no-repeat;
 }
 
 #services .container{
@@ -176,7 +177,6 @@ nav a:hover{
 
 #services2{
   min-height: 120vh;
-
 }
 
 #services2 .img-container{
@@ -323,4 +323,53 @@ footer .right{
 
 footer .right i{
   color:#555;
+}
+
+
+/*  tablet devices  */
+
+@media(max-width:1024px) and (min-width:700px)
+{
+
+}
+
+/* mobile devices */
+
+@media(max-width: 640px)
+{
+  #services .container{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    gap:50px;
+    margin-top:3rem;
+  }
+
+  #services2 .grid{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    gap:100px;
+  }
+
+  #home{
+    background-size: 100% 100%;
+    min-height:40vh;
+  }
+
+  #home h1 , .mid h1{
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    font-weight: 300;
+    color: white;
+    background: rgba(0,0,0 , 0.3);
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  #home h2 , .mid h2{
+    background:#4CA2BE;
+    color:white;
+    padding:.5rem 1rem;
+    font-weight: 300;
+    font-size: .75rem;
+    text-align: center;
+  }
 }
